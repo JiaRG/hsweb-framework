@@ -28,7 +28,6 @@ import org.hswebframework.web.commons.entity.factory.EntityFactory;
 import org.hswebframework.web.dao.mybatis.builder.EasyOrmSqlBuilder;
 import org.hswebframework.web.dao.mybatis.dynamic.DynamicDataSourceSqlSessionFactoryBuilder;
 import org.hswebframework.web.dao.mybatis.dynamic.DynamicSpringManagedTransaction;
-import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.boot.autoconfigure.SpringBootVFS;
 import org.mybatis.spring.transaction.SpringManagedTransactionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -109,9 +108,6 @@ public class MyBatisAutoConfiguration {
 
         SqlSessionFactory sqlSessionFactory = factory.getObject();
         MybatisUtils.sqlSession = sqlSessionFactory;
-
-        EnumDictHandlerRegister.typeHandlerRegistry = sqlSessionFactory.getConfiguration().getTypeHandlerRegistry();
-        EnumDictHandlerRegister.register("org.hswebframework.web;" + mybatisProperties.getTypeHandlersPackage());
 
         try {
             Class.forName("javax.persistence.Table");
