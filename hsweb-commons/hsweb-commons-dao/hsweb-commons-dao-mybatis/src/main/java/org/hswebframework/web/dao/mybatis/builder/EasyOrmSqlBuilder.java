@@ -185,7 +185,7 @@ public class EasyOrmSqlBuilder {
             try {
                 jdbcType = JDBCType.valueOf(resultMapping.getJdbcType().name());
             } catch (Exception e) {
-                log.warn("can not parse jdbcType:{}", resultMapping.getJdbcType());
+                log.warn("Can not parse jdbcType[{}] of column[{}], will use default jdbcType[{}]", resultMapping.getJdbcType(), resultMapping.getColumn(), jdbcType);
             }
             RDBColumnMetaData column = new RDBColumnMetaData();
             column.setJdbcType(jdbcType);
