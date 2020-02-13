@@ -24,6 +24,7 @@ import org.hswebframework.web.commons.entity.RecordCreationEntity;
 import org.hswebframework.web.commons.entity.RecordModifierEntity;
 import org.hswebframework.web.commons.entity.events.EntityCreatedEvent;
 import org.hswebframework.web.commons.entity.events.EntityModifyEvent;
+import org.hswebframework.web.dao.CrudDao;
 import org.hswebframework.web.id.IDGenerator;
 import org.hswebframework.web.validator.group.CreateGroup;
 import org.hswebframework.web.validator.group.UpdateGroup;
@@ -45,8 +46,11 @@ import java.util.List;
  */
 @Transactional(rollbackFor = Throwable.class)
 public abstract class GenericEntityService<E extends GenericEntity<PK>, PK>
-        extends AbstractService<E, PK>
-        implements GenericService<E, PK> {
+    extends AbstractService<E, PK>
+    implements GenericService<E, PK> {
+
+    @Autowired
+    private CrudDao<E, PK> dao;
 
     @SuppressWarnings("unchecked")
     public GenericEntityService() {
@@ -210,4 +214,12 @@ public abstract class GenericEntityService<E extends GenericEntity<PK>, PK>
         return createQuery().where().in(GenericEntity.id, id).listNoPaging();
     }
 
+    @Override
+    public CrudDao<E, PK> getDao() {
+        return dao;
+    }
+
+    public void setDao(CrudDao<E, PK> dao) {
+        this.dao = dao;
+    }
 }
