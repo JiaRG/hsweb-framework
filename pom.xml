@@ -39,6 +39,7 @@
         <module>hsweb-concurrent</module>
         <module>hsweb-boost</module>
         <module>hsweb-thirdparty</module>
+        <module>hsweb-bom</module>
     </modules>
 
     <name>hsweb framework</name>
