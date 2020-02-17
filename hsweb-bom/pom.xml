@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>9</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.hswebframework.web</groupId>
+    <artifactId>hsweb-bom</artifactId>
+    <version>3.0.11</version>
+    <packaging>pom</packaging>
+
+    <name>Hsweb Framework BOM</name>
+    <description>Hsweb Framework (Bill of Materials)</description>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- hsweb-authorization -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-authorization-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-authorization-basic</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-authorization-jwt</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-authorization-oauth2-core</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-authorization-oauth2-client</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-authorization-oauth2-auth-server</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-boost -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-boost-aop</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-boost-excel</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-boost-ftp</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-commons -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-commons-bean</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-commons-controller</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-commons-dao-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-commons-dao-mybatis</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-commons-entity</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-commons-model</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-commons-service-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-commons-service-oauth2</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-commons-service-simple</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-commons-utils</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-concurrent -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-concurrent-async-job</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-concurrent-cache</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-concurrent-counter-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-concurrent-counter-redis</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-concurrent-lock-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-concurrent-lock-redis</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-concurrent-lock-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-concurrent-rate-limiter-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-concurrent-rate-limiter-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-core -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-core</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-datasource -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-datasource-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-datasource-jta</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-datasource-web</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-logging -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-access-logging-aop</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-access-logging-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-starter -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-spring-boot-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-tests -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-tests</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-thirdparty -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-thirdparty-ueditor</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-system-authorization -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-authorization-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-authorization-local</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-authorization-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-authorization-web</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-system-config -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-config-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-config-local</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-config-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-config-web</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-system-dashboard -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-dashboard-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-dashboard-local</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-dashboard-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-dashboard-web</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-system-database-manager -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-database-manager-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-database-manager-local</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-database-manager-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-database-manager-web</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-system-datasource -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-datasource-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-datasource-local</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-datasource-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-datasource-web</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-system-dev-tools -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-dev-tools</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-system-dictionary -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-dictionary-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-dictionary-local</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-dictionary-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-dictionary-web</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-system-dynamic-form -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-dynamic-form-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-dynamic-form-local</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-dynamic-form-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-dynamic-form-web</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-system-file -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-file-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-file-local</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-file-oauth2</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-file-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-file-web</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-system-oauth2-client -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-oauth2-client-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-oauth2-client-local</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-oauth2-client-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-oauth2-client-web</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-system-oauth2-server -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-oauth2-server-local</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-oauth2-server-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-oauth2-server-web</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-system-organizational -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-organizational-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-organizational-authorization</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-organizational-local</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-organizational-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-organizational-web</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-system-schedule -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-schedule-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-schedule-local</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-schedule-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-schedule-web</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-system-script -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-script-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-script-local</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-script-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-script-web</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-system-template -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-template-api</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-template-local</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-template-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-template-web</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+            <!-- hsweb-system-workflow -->
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-workflow-local</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hswebframework.web</groupId>
+                <artifactId>hsweb-system-workflow-starter</artifactId>
+                <version>3.0.11</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>
